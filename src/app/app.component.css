@@ -1,0 +1,27 @@
+.entry-screen {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.green {
+    color: blue;
+}
+
+button {
+    padding: 2rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    background: mediumseagreen;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: mediumspringgreen;
+
+}

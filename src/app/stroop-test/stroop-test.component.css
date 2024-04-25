@@ -1,0 +1,44 @@
+.test-container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+h2 {
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    width: fit-content;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.color-container {
+    width: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    ul {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
