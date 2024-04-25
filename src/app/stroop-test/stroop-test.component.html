@@ -1,0 +1,12 @@
+<div class="test-container">
+    <h2>Press the color of the word, not what the word says</h2>
+    <h1 class="colorToWord">{{colorToWord.name}}</h1>
+    <ul class="colors-list">
+        <li *ngFor="let color of colorList" (click)="selectedColor($event, color)">
+            <div class="color-container" style="background: {{color.name}}">
+            </div>
+        </li>
+    </ul>
+    <app-stroop-test-results [show]="isShow" [resultsCorrect]="finalCorrect" [resultsInCorrect]="finalIncorrect">
+    </app-stroop-test-results>
+</div>
