@@ -31,14 +31,16 @@ export class StroopTestComponent {
   click: number = 0;
   finalCorrect: string = '';
   finalIncorrect: string = '';
-  isShow = false;
+  showResults = false;
 
   selectedColor(event: any, color: any) {
     if (this.click === 9) {
       console.log("end")
       this.finalCorrect = this.correct.toString();
       this.finalIncorrect = this.wrong.toString();
-      this.isShow = !this.isShow;
+      const testContainer = document.querySelectorAll<HTMLElement>('.test-container')[0]
+      this.showResults = !this.showResults;
+      testContainer.style.display = "none"
       return
     } else {
       this.click += 1;

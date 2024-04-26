@@ -11,6 +11,10 @@ export class StroopTestResultsComponent {
   @Input() resultsCorrect = ''; // decorate the property with @Input()
   @Input() resultsInCorrect = ''; // decorate the property with @Input()
   @Input() show = false; // decorate the property with @Input()
+
+  retry() {
+    window.location.reload();
+  }
   ngOnInit(): void {
   }
 }

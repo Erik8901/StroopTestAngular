@@ -1,5 +1,6 @@
 <div class="test-results-container" *ngIf=show>
-    <span> You Test Results:</span>
+    <h2> Your Test Results:</h2>
     <span> Correct Anwsers: {{ resultsCorrect }} </span>
     <span> Incorrect Anwsers: {{ resultsInCorrect }} </span>
+    <button (click)="retry()">Click here to retry the test</button>
 </div>
