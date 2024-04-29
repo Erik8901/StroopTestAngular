@@ -13,7 +13,7 @@
     <div class="entry-screen" *ngIf=!testStarted>
       <h1>Stroop Test</h1>
       <span>In this test you will need to click the color of the word, not what the word says</span>
-      <span>For example, for the word, <span class="green">Green</span>, you should click thr color Blue</span>
+      <span>For example, for the word, <span class="green">Green</span>, you should click the color Blue</span>
       <button (click)="startTest()">Click here to start the test</button>
     </div>
     <app-stroop-test *ngIf=testStarted></app-stroop-test>
